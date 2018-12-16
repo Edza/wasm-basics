@@ -1,4 +1,9 @@
 #include <webassembly.h>
+ 
+// export int add(int a, int b) {
+//   return a + b;
+// }
+// #include <webassembly.h>
 
 export int add(int x1, int x2) {
   char str[20] = "0183456789";
@@ -21,5 +26,6 @@ export int add(int x1, int x2) {
 
    //printf("str[2] izteikts tikai ar d %c\n", *((**d) + 2));
 
-   return *((**d) + 2);
+   char e = *((**d) + 2);
+   return 69 +e;
 }
